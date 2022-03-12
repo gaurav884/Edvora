@@ -43,10 +43,10 @@ const Card = (props) => {
                         <span>[{props.ride.station_path.map((each, index) => {
 
                             if (index != props.ride.station_path.length - 1) {
-                                return React.Children.toArray(<span id={index}>{each}, </span>)
+                                return React.Children.toArray(<span id={index} key={index}>{each}, </span>)
                             }
                             else {
-                                return React.Children.toArray(<span id={index}>{each}</span>)
+                                return React.Children.toArray(<span id={index} key={index}>{each}</span>)
                             }
 
                         })}] </span>

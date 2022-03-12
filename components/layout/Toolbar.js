@@ -137,7 +137,7 @@ const Toolbar = () => {
               {
                 React.Children.toArray(
                   (states.map((each, index) => {
-                    return <option value={each} >{each}</option>
+                    return <option value={each} key={index}>{each}</option>
                   }))
                 )
 
@@ -149,7 +149,7 @@ const Toolbar = () => {
               {
                 React.Children.toArray(
                   (cities.map((each, index) => {
-                    return <option value={each} >{each}</option>
+                    return <option value={each} key={index}>{each}</option>
                   }))
                 )
 
